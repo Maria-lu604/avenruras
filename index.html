@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="passo-0" class="ativo">
+            <p>Você encontrou um mapa misterioso. O que deseja fazer?</p>
+            <button data-proximo="passo-1">Seguir o mapa</button>
+            <button data-proximo="passo-2">Ignorar o mapa</button>
+        </div>
+        <div id="passo-1">
+            <p>O mapa leva você a uma floresta densa. Há dois caminhos.</p>
+            <button data-proximo="passo-3">Caminho da direita</button>
+            <button data-proximo="passo-4">Caminho da esquerda</button>
+        </div>
+        <div id="passo-2">
+            <p>Você decide ignorar o mapa. Fim da aventura.</p>
+        </div>
+        <div id="passo-3">
+            <p>Você encontrou um rio. Fim da aventura.</p>
+        </div>
+        <div id="passo-4">
+            <p>Você encontrou um tesouro escondido! Parabéns!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
